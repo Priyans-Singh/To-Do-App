@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+   background-image: linear-gradient(to left ,rgb(12, 147, 19), #149358);
+   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.taskContainer{
+  width: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5px;
+  border: 1px solid white ;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#root{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+h1{
+  margin : 10% 40px 40px 40px;
+  font-size: 45px;
+}
+
+.input-area{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.input-box{
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1.5px solid black;
+}
+
+.add-btn{
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1.5px solid black;
+}
+
+.add-btn:hover{
+  background-color: #149358;
+  color: aliceblue;
+  transition: all 0.3s ease;
+}
+
+.task{
+  background-color: rgb(247, 247, 247);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 12px;
+
+}
+
+.Delete-btn{
+  cursor: pointer;
+  background-color: orangered;
+  color: aliceblue;
+  margin: 5px;
+  padding: 10px; 
+  border-radius: 12px;
+  border: 1.5px solid black;
+  transition: all 0.3s ease;
+}
+
+.Delete-btn:hover{
+   background-color: aliceblue;
+   color: black;
 }
